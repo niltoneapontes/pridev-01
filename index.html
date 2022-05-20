@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Se inscreva para o Evento do Ano no mundo da programação e não fique de fora!">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Inscrição | Evento do Ano</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <div class="left-side">
+      <img id="illustration" src="assets/illustration.svg" alt="Hand illustration">
+
+      <h2>E aí, vamo nessa?</h2>
+
+      <label for="not-excited">
+        <input type="radio" name="excitement" id="not-excited" value="not-excited">
+        😴
+      </label>
+      <label for="not-excited">
+        <input type="radio" name="excitement" id="excited" value="excited">
+        🥳
+      </label>
+    </div>
+    <div class="right-side">
+      <form action="submitted.html" method="get">
+        <img src="assets/logo.svg" alt="Logo" id="logo">
+        <h2>Boas-vindas ao Evento do Ano!</h2>
+        <h3>Cadastre-se para participar</h3>
+        <input type="text" name="name" id="name" placeholder="Seu nome completo" required>
+        <input type="email" name="email" id="email" placeholder="E-mail" required>
+        <p>Data de nascimento</p>
+        <input type="date" name="birthdate" id="birthdate" required>
+        <label for="agreement" id="agreement-text">
+          <input type="checkbox" name="agreement" id="agreement" required>
+          <span>Declaro que li e estou de acordo com os <a href="https://www.instagram.com/niltoneapontes/"
+              target="_blank">termos de
+              participação
+              do
+              evento</a>.</span>
+        </label>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </main>
+</body>
+
+</html>
